@@ -5,7 +5,7 @@ from .models import Article
 # Create your views here.
 
 class ArticleView(View):
-    template_name="article/index.html"
+    template_name="public/index.html"
     def get(self,request):
         articles=Article.objects.all()
         form = ArticleForme()
